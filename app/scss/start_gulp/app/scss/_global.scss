@@ -1,0 +1,148 @@
+body {
+}
+
+main {
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media (max-width: $screen-s) {
+    max-width: 630px;
+  }
+
+  &--big {
+    max-width: 1800px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+svg {
+  transition: fill .3s;
+}
+
+img {
+  object-fit: contain;
+  object-position: center center;
+}
+
+.logo {
+  flex-shrink: 0;
+  display: flex;
+}
+
+.logo__img {
+  width: 146px;
+  height: 39px;
+  object-fit: contain;
+
+  @media (max-width: $screen-xs) {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+  }
+}
+
+a,
+button {
+  outline-color: grey;
+  transition: background-color .3s;
+  transition: color .3s;
+}
+
+.burger {
+  display: none;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  flex-shrink: 0;
+  flex-grow: 0;
+  text-align: center;
+  background: none;
+  position: relative;
+  transition: all 0.3 ease-in;
+
+  @include a($screen-m) {
+    display: flex;
+    z-index: 2;
+  }
+
+  &__item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before,
+    &::after {
+      content: '';
+    }
+
+    span,
+    &::before,
+    &::after {
+      display: block;
+      height: 2px;
+      width: 30px;
+      background-color: #ffffff;
+      margin: 0 auto;
+      position: absolute;
+      transition: all 0.3s ease;
+    }
+
+    &::before {
+      transform: translateY(-7px);
+    }
+
+    &::after {
+      transform: translateY(7px);
+    }
+  }
+}
+
+.header__nav--active .burger__item::before {
+  transform: rotate(45deg);
+}
+
+.header__nav--active .burger__item::after {
+  transform: rotate(-45deg);
+}
+
+.header__nav--active .burger__item span {
+  transform: scale(0);
+}
+
+.header__nav--active .header__list {
+  transform: translateY(0);
+}

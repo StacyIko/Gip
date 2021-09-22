@@ -1,0 +1,318 @@
+body {
+  background-color: black;
+  color: #ffffff;
+  font-size: 16px;
+  @include font("Roboto", 400);
+}
+
+main {
+  padding-top: 70px;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.main, .footer {
+  margin-left: 150px;
+
+  @include a($screen-s) {
+    margin-left: 0;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media (max-width: $screen-s) {
+    max-width: 630px;
+  }
+
+  &--big {
+    max-width: 1560px;
+  }
+}
+
+.section {
+  padding-bottom: 60px;
+
+  @include a($screen-s) {
+    height: fit-content;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+svg {
+  transition: fill .3s;
+}
+
+img {
+  object-fit: contain;
+  object-position: center center;
+}
+
+.logo {
+  flex-shrink: 0;
+  display: flex;
+}
+
+.logo__img {
+  // width: 146px;
+  // height: 39px;
+  // object-fit: contain;
+
+  // @media (max-width: $screen-xs) {
+  //   width: 100%;
+  //   max-width: 100px;
+  //   height: auto;
+  // }
+}
+
+a,
+button,
+div {
+  outline-color: $accent;
+  transition: background-color .3s;
+  transition: color .3s;
+}
+
+a:active,
+a:focus {
+  outline-color: $accent;
+  border: $accent;
+}
+
+.main-title {
+  margin-bottom: 50px;
+  max-width: 52%;
+  @include font("Poppins", 700);
+  font-size: 98px;
+  line-height: 1.2;
+  @include line-c(3);
+
+  @include a($screen-l) {
+    font-size: 80px;
+  }
+
+  @include a($screen-m) {
+    max-width: none;
+  }
+
+  @include a($screen-s) {
+    font-size: 60px;
+  }
+
+  @include a($screen-xs) {
+    font-size: 45px;
+  }
+}
+
+.section-title {
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+
+	@include a($screen-s) {
+		margin-bottom: 20px;
+	}
+}
+
+.title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 15px;
+	text-transform: uppercase;
+}
+
+.burger {
+  display: none;
+  margin-right: 15px;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  flex-shrink: 0;
+  flex-grow: 0;
+  text-align: center;
+  background: none;
+  position: relative;
+  transition: all 0.3 ease-in;
+
+  @include a($screen-s) {
+    display: flex;
+    z-index: 2;
+  }
+
+  &__item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before,
+    &::after {
+      content: '';
+    }
+
+    span,
+    &::before,
+    &::after {
+      display: block;
+      height: 2px;
+      width: 30px;
+      background-color: #ffffff;
+      margin: 0 auto;
+      position: absolute;
+      transition: all 0.3s ease;
+    }
+
+    &::before {
+      transform: translateY(-7px);
+    }
+
+    &::after {
+      transform: translateY(7px);
+    }
+  }
+}
+
+.nav--active .burger__item::before {
+  transform: rotate(45deg);
+}
+
+.nav--active .burger__item::after {
+  transform: rotate(-45deg);
+}
+
+.nav--active .burger__item span {
+  transform: scale(0);
+}
+
+.nav.nav--active {
+  transform: translateY(0);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track, .swiper-container-horizontal>.swiper-scrollbar {
+  background: rgba(#ffffff, 0.2);
+}
+
+::-webkit-scrollbar-thumb, .swiper-scrollbar-drag {
+  background: $accent;
+}
+
+
+.btn {
+  padding: 8px;
+  background-color: $accent;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: background-color .3s;
+
+  &:hover {
+    background-color: $hover;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $active;
+  }
+}
+
+.main-btn {
+  display: block;
+  padding: 8px 40px 8px 0;
+  width: 108px;
+  height: 36px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-transform: uppercase;
+
+  &:hover {
+    .main-btn-shape {
+      left: 20px;
+    }
+  }
+
+  &::after {
+    content: '';
+    width: 18px;
+    height: 14px;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    background-image: url(../images/icons/right-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center right;
+    z-index: 1;
+  }
+
+}
+
+.main-btn-text {
+  position: relative;
+  z-index: 1;
+}
+
+.main-btn-shape {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: $accent;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: -1;
+  transition: all .4s;
+
+  &:hover {
+    background-color: $hover;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $active;
+  }
+
+  @include a($screen-s) {
+    left: 20px;
+  }
+}
+
+.swiper-container-horizontal>.swiper-scrollbar {
+	top: 0;
+}

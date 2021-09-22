@@ -1,0 +1,34 @@
+$accent: #6c06ff;
+$hover: #5d08d3;
+$active: #8437f0;
+$accent2: #faae7b;
+$default: rgba(#ffffff, 0.2);
+$screen-l: 1200;
+$screen-m: 991;
+$screen-s: 768;
+$screen-xs: 576;
+
+@mixin font($ff, $fw) {
+	font-family: $ff, sans-serif;
+	font-weight: $fw;
+}
+
+@mixin a($width) {
+	@media only screen and (max-width: $width+ "px") {
+		@content;
+	}
+}
+
+@mixin line-c($lines) {
+	display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@function max($numbers...) {
+	@return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+	@return m#{i}n(#{$numbers});
+}
