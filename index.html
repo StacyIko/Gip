@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gip</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<header class="header">
+				<a class="logo header__logo" href="#body">
+					<img class="logo__img" src="images/icons/logo.svg" alt="logo">
+				</a>
+				<a class="btn header__btn" href="#hire">Hire Us</a>
+				<button class="burger">
+					<div class="burger__item"><span></span></div>
+				</button>
+			</header>
+
+			<nav class="nav">
+				<span class="nav__dot"></span>
+				<ol class="nav__list">
+					<li class="nav__item">
+						<a class="nav__link" href="#home">
+							<span>Home</span>
+						</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#works">
+							<span>Works</span>
+						</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#about">
+							<span>About</span>
+						</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#contacts">
+							<span>Contact</span>
+						</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#hire">
+							<span>Hire Us</span>
+						</a>
+					</li>
+				</ol>
+			</nav>
+
+
+			<main class="main">
+				<section class="hero section" id="home">
+					<h2 class="sr-only">Main page</h2>
+					<div class="container">
+						<div class="hero__inner">
+							<div class="hero__content">
+								<p class="hero__title main-title">Your top design solutions</p>
+								<a class="main-btn hero__btn" href="#hire">
+									<span class="main-btn-text">Hire Us</span>
+									<span class="main-btn-shape"></span>
+								</a>
+							</div>
+							<div class="hero__bottom swiper-container">
+								<div class="swiper-scrollbar"></div>
+								<div class="hero__items swiper-wrapper">
+									<li class=" hero__item swiper-slide">
+										<h3 class="title">Logo design</h3>
+										<div class="hero__text">
+											<p>Identic logo for a cofee shop</p>
+										</div>
+									</li>
+									<li class="hero__item swiper-slide">
+										<h3 class="title">Branding</h3>
+										<div class="hero__text">
+											<p>Business card, labels, website</p>
+										</div>
+									</li>
+									<li class="hero__item swiper-slide">
+										<h3 class="title">App Design</h3>
+										<div class="hero__text">
+											<p>Food delivery service</p>
+										</div>
+									</li>
+									<li class="hero__item swiper-slide">
+										<h3 class="title">Web Design</h3>
+										<div class="hero__text">
+											<p>Fashion blog</p>
+										</div>
+									</li>
+									<li class="hero__item swiper-slide">
+										<h3 class="title">Brochure Design</h3>
+										<div class="hero__text">
+											<p>Drinks company</p>
+										</div>
+									</li>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="works section" id="works">
+					<h2 class="works__title section-title">Our works</h2>
+					<div class="container container--big">
+						<div class="works__inner">
+							<div class="works__slider swiper-container">
+								<div class="works__wrapper swiper-wrapper">
+
+									<div class="works__item swiper-slide" data-src="#work-1">
+										<div class="works__img-box">
+											<img class="works__img" src="images/works/1.jpg" alt="work">
+										</div>
+										<h3 class="title">Logo design</h3>
+										<div class="works__text">
+											<p>Identic logo for a cofee shop</p>
+										</div>
+									</div>
+
+									<div class="works__item-hidden" style="display: none;" id="work-1">
+										<div class="works__item-top">
+											<img class="works__img" src="images/works/1.jpg" alt="work">
+											<h3 class="title">Logo design</h3>
+											<p>Identic logo for a cofee shop</p>
+										</div>
+										<div class="works__hidden-text">
+											<h4>Here are the most important steps to designing a logo:</h4>
+											<ul>
+												<li>Understand why you need a logo.</li>
+												<li>Define your brand identity.</li>
+												<li>Find inspiration for your design.</li>
+												<li>Check out the competition.</li>
+												<li>Choose your design style.</li>
+												<li>Find the right type of logo.</li>
+												<li>Pay attention to color.</li>
+												<li>Pick the right typography.</li>
+											</ul>
+											<p>Introducing new logos to connect with potential customers and communicate technical
+												concepts
+												has helped us to realize the
+												potential of this company, and we continue to collaborate on exciting new developments.
+											</p>
+										</div>
+									</div>
+
+									<!-- Slide 2------------------------- -->
+									<div class="works__item swiper-slide swiper-slide-active" data-src="#work-2">
+										<div class="works__img-box">
+											<img class="works__img" src="images/works/2.jpg" alt="work">
+										</div>
+										<h3 class="title">Branding</h3>
+										<div class="works__text">
+											<p>Business card, labels, website</p>
+										</div>
+									</div>
+
+									<div class="works__item-hidden" style="display: none;" id="work-2">
+										<div class="works__item-top">
+											<img class="works__img" src="images/works/2.jpg" alt="work">
+											<h3 class="title">Branding</h3>
+											<div class="works__hidden-text">
+												<p>Business card, labels, website</p>
+											</div>
+										</div>
+									</div>
+
+									<!-- Slide 3 -->
+									<div class="works__item swiper-slide" data-src="#work-3">
+										<div class="works__img-box">
+											<img class="works__img" src="images/works/3.jpg" alt="work">
+										</div>
+										<h3 class="title">App Design</h3>
+										<div class="works__text">
+											<p>Food delivery service</p>
+										</div>
+									</div>
+
+									<div class="works__item-hidden" style="display: none;" id="work-3">
+										<div class="works__item-top">
+											<img class="works__img" src="images/works/3.jpg" alt="work">
+											<h3 class="title">App Design</h3>
+											<div class="works__hidden-text">
+												<p>Food delivery service</p>
+											</div>
+										</div>
+									</div>
+
+									<!-- Slide 4 -->
+									<div class="works__item swiper-slide" data-src="#work-4">
+										<div class="works__img-box">
+											<img class="works__img" src="images/works/4.jpg" alt="work">
+										</div>
+										<h3 class="title">Web Design</h3>
+										<div class="works__text">
+											<p>Fashion blog</p>
+										</div>
+									</div>
+
+									<div class="works__item-hidden" style="display: none;" id="work-4">
+										<div class="works__item-top">
+											<img class="works__img" src="images/works/4.jpg" alt="work">
+											<h3 class="title">Web Design</h3>
+											<div class="works__hidden-text">
+												<p>Fashion blog</p>
+											</div>
+										</div>
+									</div>
+
+									<!-- Slide 5 -->
+									<div class="works__item swiper-slide" data-src="#work-5">
+										<div class="works__img-box">
+											<img class="works__img" src="images/works/5.jpg" alt="work">
+										</div>
+										<h3 class="title">Brochure Design</h3>
+										<div class="works__text">
+											<p>Drinks company</p>
+										</div>
+									</div>
+
+									<div class="works__item-hidden" style="display: none;" id="work-5">
+										<div class="works__item-top">
+											<img class="works__img" src="images/works/5.jpg" alt="work">
+											<h3 class="title">Brochure Design</h3>
+											<div class="works__hidden-text">
+												<p>Drinks company</p>
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+							<div class="works__button-prev"></div>
+							<div class="works__button-next"></div>
+						</div>
+					</div>
+				</section>
+
+				<section class="about section" id="about">
+					<h2 class="sr-only">About</h2>
+					<div class="container">
+						<div class="about__inner">
+							<div class="about__top">
+								<div class="main-title about__main-title">
+									We are passionate about digital
+								</div>
+								<a class="main-btn" href="#">
+									<span class="main-btn-text">Career</span>
+									<span class="main-btn-shape"></span>
+								</a>
+							</div>
+
+							<div class="about__bottom">
+								<div class="about__item about__item--1" data-src="#about-1">
+									<h3 class="about__title">philosophy</h3>
+								</div>
+								<div class="about__item-hidden" id="about-1" style="display: none;">
+									<h3 class="about__title-hidden">philosophy</h3>
+									<div class="about__text">
+										<p>
+											GIP Digital Marketing Agency is a dynamic, versatile and full-service digital marketing agency
+											that doesn’t rely on
+											smoke and mirrors to attract new clients. Instead, we trust our own search engine optimization
+											(SEO) and marketing
+											skills to drive new customers to our website.
+											We’re not a static company. We don’t limit ourselves to specific industries. We have the
+											experience and professionals
+											to build a custom website and use multiple digital marketing services to assist any size company
+											in
+											any industry.
+										</p>
+									</div>
+								</div>
+
+								<div class="about__item about__item--2" data-src="#about-2">
+									<h3 class="about__title">services</h3>
+								</div>
+								<div class="about__item-hidden" id="about-2" style="display: none;">
+									<h3 class="about__title-hidden">services</h3>
+									<div class="about__text">
+										<ul class="about__list">
+											<li class="about__list-item">
+												<h4 class="about__heading">Content Writing</h4>
+												<div class="about__descr">
+													<p>
+														Your website's content is crucial: it's the foundation of your SEO and the reason many
+														people visit your site. Entrust
+														your content creation with us, and we'll write it with precision. Our content specialists
+														stay abreast of the latest
+														news and market trends to ensure we adhere to Google standards when developing content. We
+														write headlines that pack a
+														punch, utilize high-performing keywords, incorporate imagery and structure your posts to
+														promote easy reading.
+													</p>
+												</div>
+											</li>
+
+											<li class="about__list-item">
+												<h4 class="about__heading">Search Engine Optimization (SEO)</h4>
+												<div class="about__descr">
+													<p>
+														Through careful keyword research and white hat SEO practices, we can help you achieve higher
+														organic rankings and
+														increased visibility in search results. Our internet marketing company performs extensive
+														keyword research, conducts
+														on-page and off-page optimization and tracks your results with Google Search Console. These
+														practices allow us to
+														attract high-quality leads and traffic and increase your conversions as part of your digital
+														marketing solutions.
+													</p>
+												</div>
+											</li>
+
+											<li class="about__list-item">
+												<h4 class="about__heading">Web Design & Development</h4>
+												<div class="about__descr">
+													<p>
+														Custom, mobile-ready and search engine optimized websites that help you meet your business
+														objectives and support your
+														digital marketing campaigns. We create a visual hierarchy to highlight your important site
+														elements and encourage page
+														visitors to take your desired action. Our web design experts utilize clear calls-to-action
+														(CTAs), avoid carousels and
+														rotating sliders, simplify form fields and create content for your persona.
+													</p>
+												</div>
+											</li>
+
+											<li class="about__list-item">
+												<h4 class="about__heading">Social Media Marketing</h4>
+												<div class="about__descr">
+													<p>
+														Ready to expand and market to your audiences on social media? We build social media
+														campaigns to help your business grow
+														and engage your followers. Our digital marketing agency identifies your goals, performs
+														competitor benchmarking and
+														evaluates your customers' online behavior. Using data and analytics, we develop custom
+														social media brand management and
+														paid advertising strategies tailored to your business.
+													</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="about__item about__item--3" data-src="#about-3">
+									<h3 class="about__title">history</h3>
+								</div>
+								<div class="about__item-hidden" id="about-3" style="display: none;">
+									<h3 class="about__title-hidden">history</h3>
+									<div class="about__text">
+										<p>
+											GIP Digital Marketing Agency is a dynamic, versatile and full-service digital marketing agency
+											that doesn’t rely on
+											smoke and mirrors to attract new clients. Instead, we trust our own search engine optimization
+											(SEO) and marketing
+											skills to drive new customers to our website.
+											We’re not a static company. We don’t limit ourselves to specific industries. We have the
+											experience and professionals
+											to build a custom website and use multiple digital marketing services to assist any size company
+											in
+											any industry.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer class="footer">
+				<div class="section contacts" id="contacts">
+					<h2 class="sr-only">Contact us</h2>
+					<div class="container">
+						<div class="contacts__inner">
+							<div id="map">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380129.9212865811!2d-87.54604770162582!3d41.8979105648333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7c289b413bb3fa8e!2sSocialDentity%20Digital%20Marketing!5e0!3m2!1sru!2srs!4v1621524628221!5m2!1sru!2srs"
+									width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+								</iframe>
+							</div>
+							<div class="contacts__card">
+								<div class="contacts__box">
+									<address class="contacts__address">
+										<p class="contacts__item">311 W Walton St, Chicago, IL, USA</p>
+										<a class="contacts__item contacts__link" href="mailto:gip@gmail.com">gip@gmail.com</a><br>
+										<a class="contacts__item contacts__link" href="tel:+13128790187">+13128790187</a>
+									</address>
+
+
+									<div class="contacts__actions">
+										<a class="contacts__action contacts__action--behance" href="#"></a>
+										<a class="contacts__action contacts__action--dribble" href="#"></a>
+										<a class="btn contacts__action contacts__action--contact" href="#">contact us</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<form class="request" id="hire" action="#">
+						<h3 class="request__title section-title">You want us to do</h3>
+						<div class="request__services">
+							<label class="request__label">
+								<input type="checkbox" id="request__checkbox" class="request__checkbox sr-only">
+								<div class="request__item">
+									<span class="request__item-text">App Design</span>
+								</div>
+							</label>
+
+							<label class="request__label">
+								<input type="checkbox" id="request__checkbox" class="request__checkbox sr-only">
+								<div class="request__item">
+									<span class="request__item-text">Motion Design</span>
+								</div>
+							</label>
+
+							<label class="request__label">
+								<input type="checkbox" id="request__checkbox" class="request__checkbox sr-only">
+								<div class="request__item">
+									<span class="request__item-text">SEO</span>
+								</div>
+							</label>
+
+							<label class="request__label">
+								<input type="checkbox" id="request__checkbox" class="request__checkbox sr-only">
+								<div class="request__item">
+									<span class="request__item-text">Web Design</span>
+								</div>
+							</label>
+
+							<label class="request__label">
+								<input type="checkbox" id="request__checkbox" class="request__checkbox sr-only">
+								<div class="request__item">
+									<span class="request__item-text">Marketing</span>
+								</div>
+							</label>
+						</div>
+
+						<div class="request__input-box">
+							<input type="text" class="request__input" placeholder="Name">
+							<input type="email" class="request__input" placeholder="Email" required>
+						</div>
+						<button class="request__btn btn" type="submit">Send request</button>
+
+					</form>
+				</div>
+			</footer>
+
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
+	<script>
+		function initMap() {
+			// Styles a map in night mode.
+			const map = new google.maps.Map(document.getElementById("map"), {
+				center: { lat: 41.90180817423993, lng: -87.63563568466641 },
+				zoom: 12,
+				styles: [
+					{ elementType: "geometry", stylers: [{ color: "#242f3e" }] },
+					{ elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
+					{ elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
+					{
+						featureType: "administrative.locality",
+						elementType: "labels.text.fill",
+						stylers: [{ color: "#d59563" }],
+					},
+					{
+						featureType: "poi",
+						elementType: "labels.text.fill",
+						stylers: [{ color: "#d59563" }],
+					},
+					{
+						featureType: "poi.park",
+						elementType: "geometry",
+						stylers: [{ color: "#263c3f" }],
+					},
+					{
+						featureType: "poi.park",
+						elementType: "labels.text.fill",
+						stylers: [{ color: "#6b9a76" }],
+					},
+					{
+						featureType: "road",
+						elementType: "geometry",
+						stylers: [{ color: "#38414e" }],
+					},
+					{
+						featureType: "road",
+						elementType: "geometry.stroke",
+						stylers: [{ color: "#212a37" }],
+					},
+					{
+						featureType: "road",
+						elementType: "labels.text.fill",
+						stylers: [{ color: "#9ca5b3" }],
+					},
+					{
+						featureType: "road.highway",
+						elementType: "geometry",
+						stylers: [{ color: "#746855" }],
+					},
+					{
+						featureType: "road.highway",
+						elementType: "geometry.stroke",
+						stylers: [{ color: "#1f2835" }],
+					},
+					{
+						featureType: "road.highway",
+						elementType: "labels.text.fill",
+						stylers: [{ color: "#f3d19c" }],
+					},
+					{
+						featureType: "transit",
+						elementType: "geometry",
+						stylers: [{ color: "#2f3948" }],
+					},
+					{
+						featureType: "transit.station",
+						elementType: "labels.text.fill",
+						stylers: [{ color: "#d59563" }],
+					},
+					{
+						featureType: "water",
+						elementType: "geometry",
+						stylers: [{ color: "#17263c" }],
+					},
+					{
+						featureType: "water",
+						elementType: "labels.text.fill",
+						stylers: [{ color: "#515c6d" }],
+					},
+					{
+						featureType: "water",
+						elementType: "labels.text.stroke",
+						stylers: [{ color: "#17263c" }],
+					},
+				],
+			});
+		}
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>
